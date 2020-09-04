@@ -12,6 +12,7 @@ const youtube = new YoutubeAPI(YOUTUBE_API_KEY);
 const { play } = require("../system/music.js");
 module.exports = {
   name: "play",
+  aliases: ["join"],
   description: "Mainkan lagunya dan rasakan musiknya ",
   async execute(client, message, args) {
     let embed = new MessageEmbed()
@@ -21,7 +22,7 @@ module.exports = {
     //FIRST OF ALL WE WILL ADD ERROR MESSAGE AND PERMISSION MESSSAGE
     if (!args.length) {
       //IF AUTHOR DIDENT GIVE URL OR NAME
-      embed.setAuthor("Ada Kesalahan: Gunakan `/play <URL YT> Atau Nama Lagu`")
+      embed.setAuthor("Ada Kesalahan: Gunakan: $play <URL YT> Atau Nama Lagu")
       return message.channel.send(embed);
     }
 

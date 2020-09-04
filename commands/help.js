@@ -3,6 +3,8 @@ const { readdirSync } = require("fs")
 const { COLOR } = require("../config.json");
 module.exports = {
   name: "help",
+  aliases: ["h"],
+  
   description: "Dapatkan semua nama perintah dan deskripsi",
   execute (client, message, args) {
     
@@ -11,7 +13,7 @@ let embed = new MessageEmbed()
 .setAuthor("HELP SECTION", client.user.displayAvatarURL())
 .setThumbnail(client.user.displayAvatarURL())
 .setColor(COLOR)
-.setFooter(`Create By Juna#7048 | My Prefix: /`)
+.setFooter(`Create By Juna#7048 | My Prefix: $`)
 .setDescription(`MUSIC LIST | TwntyOne Community`)
 let command = readdirSync("./commands")    
 

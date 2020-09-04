@@ -7,6 +7,7 @@ const discord = require("discord.js");
 
 module.exports = {
   name: "stop",
+  aliases: ["leave"],
   description: "Hentikan musik dan istirahatlah ;) ",
   execute(client, message, args) {
     

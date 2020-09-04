@@ -4,30 +4,24 @@ const { readdirSync } = require("fs");
 const { join } = require("path");
 const { TOKEN, PREFIX } = require("./config.json")
 
-//UPTIME CALLBACK
-const http = require('http');
-const express = require('express');
+//UPTIME ROBOT (WEB)
+const { get } = require("snekfetch");
+const http = require("http");
+const express = require("express");
 const app = express();
-var server = http.createServer(app);
-
 app.get("/", (request, response) => {
-  console.log(`Ping Received.`);
-  response.writeHead(200, {'Content-Type': 'text/plain'})
-  response.end("TwntyOne Community ")
-});
-
-const listener = server.listen(process.env.PORT, function() {
-  console.log(`Your app is listening on port ` + listener.address().port);
-});
+  console.log("Pinging");
+  response.sendStatus(200);
+})
+app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`https://music-21rp.glitch.me`);
+http.get(`https://music-zysec.glitch.me`);
 }, 280000);
- 
 
 //CLIENT EVENTS
 client.on("ready", () => {
   console.log('Ready to play song | Saya Siap')
-  client.user.setActivity("/help | TwntyOne Roleplay")
+  client.user.setActivity("$help | MUSIC ZYSEC")
 })
 
 client.on("warn", info => console.log(info));

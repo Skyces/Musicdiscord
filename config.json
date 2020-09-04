@@ -1,8 +1,8 @@
 {
-  "PREFIX": "/", 
-  "TOKEN": "NzQ4NDQ3NDMwOTE1MTI5MzY1.X0dj_Q.9bvPyD-6ugejfrl_42ahMU8mEoU", 
+  "PREFIX": "$", 
+  "TOKEN": "NzUwNzk4ODI5MDk1MzU0Mzk5.X0_x5g.ZR_E06UmBWZXzRmxBSlMyK1jKSk", 
   "YOUTUBE_API_KEY": "AIzaSyB3uTGoFVDGmzGX6scAY_Dsdth1vcxl6dY",
   "QUEUE_LIMIT": 0,
   "COLOR": "RANDOM",
-  "inviteURL": "https://discord.com/api/oauth2/authorize?client_id=748447430915129365&permissions=8&scope=bot"
+  "inviteURL": "https://discord.com/api/oauth2/authorize?client_id=750798829095354399&permissions=8&scope=bot"
 }

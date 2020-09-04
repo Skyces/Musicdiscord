@@ -7,7 +7,7 @@ module.exports = {
   execute(client, message, args) {
     
     if(!message.member.hasPermission("ADMINISTRATOR")) {
-      return message.channel.send("Anda Tidak Diperbolehkan Mengubah Volume Musik")
+      return message.channel.send("Anda Tidak Diperbolehkan Mengubah Volume Music")
     }
     
 
